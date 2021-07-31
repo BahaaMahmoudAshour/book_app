@@ -10,7 +10,7 @@ const db_config = {
 }
 const pool = new Pool(db_config);
 
-pool.on("connect" , clie nt => {
+pool.on("connect" , client => {
    console.log("Databae connected ");
 })
 
