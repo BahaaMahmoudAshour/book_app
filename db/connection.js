@@ -1,13 +1,12 @@
 var pool = require("./pool");
 
-  exports.query = (queryText, queryParams) =>{
-      return new Promise((resolve, reject) => {
-        pool.query(queryText, queryParams).then(res => {
-            resolve(res);
-        })
-        .catch(e =>{
-      reject(err);
-        })
-
-      });
-  }
+exports.dbQuery = (queryText, queryParams) => {
+  return new Promise((resolve, reject) => {
+    pool.query(queryText, queryParams).then(res => {
+      resolve(res);
+    })
+      .catch(e => {
+        reject(err);
+      })
+  });
+}

@@ -1,11 +1,10 @@
-exports.Book = class Book{
-    constructor(bookId, bookName, isbn, publisher, auther, description,pages)
-    {
+exports.Book = class Book {
+    constructor(bookId, bookName, isbn, publisher, author, description, pages) {
         this.bookId = bookId;
-        this.bookName= bookName;
-        this.isbn =isbn;
+        this.bookName = bookName;
+        this.isbn = isbn;
         this.publisher = publisher;
-        this.auther = publisher;
+        this.author = author;
         this.description = description;
         this.pages = pages;
         this.publisher = publisher;
