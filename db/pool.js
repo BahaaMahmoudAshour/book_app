@@ -15,7 +15,7 @@ pool.on("connect" , client => {
 })
 
 pool.on("remove" , client => {
-  console.log("Databae connection removed");
+  console.log("Database connection removed");
 })
 
 module.exports = pool;
